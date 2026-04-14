@@ -62,3 +62,10 @@ The goal of this project is to:
 - Python (Pandas, NumPy, Scikit-learn)  
 - Data visualization (Matplotlib, Seaborn)  
 - Jupyter Notebook  
+
+
+## Results
+
+The Mann-Whitney U test yielded a p-value of 0.0, indicating a statistically significant difference in purchase frequency between high-value and low-value customers.
+
+This confirms that purchase frequency is a strong indicator of customer value.
