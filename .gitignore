@@ -1,0 +1,4 @@
+.venv/
+__pycache__/
+.DS_Store
+online_retail_II.xlsx
