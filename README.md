@@ -202,3 +202,20 @@ Overall, the project demonstrates that early customer purchasing behavior contai
 Among all features, EarlyMonetary, EarlyQuantity, and EarlyAvgOrderValue emerged as the strongest predictors.
 
 These findings suggest that businesses can proactively identify valuable customers early in their lifecycle and apply targeted marketing or retention strategies before customer value fully develops.
+
+---
+
+## Repository Structure
+
+- `eda_hypothesis_tests.ipynb`  
+  Exploratory Data Analysis and hypothesis testing
+
+- `ml_modeling.ipynb`  
+  Machine learning pipeline, evaluation, and model comparison
+
+- `requirements.txt`  
+  Python dependencies required to reproduce the project
+
+- `README.md`  
+  Project overview, methodology, results, and findings
+  
