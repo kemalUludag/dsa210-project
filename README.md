@@ -167,3 +167,38 @@ Random Forest improves recall, successfully identifying more high-value customer
 This trade-off is acceptable in business contexts where missing a high-value customer is more costly than incorrectly targeting a low-value one.
 
 Therefore, Random Forest is considered the more effective model for this problem. 
+
+### ROC-AUC Analysis
+
+ROC-AUC analysis was performed to evaluate the models across different classification thresholds.
+
+- Logistic Regression achieved an AUC score of approximately 0.80  
+- Random Forest achieved an AUC score of approximately 0.77  
+
+Interestingly, Logistic Regression slightly outperformed Random Forest in ROC-AUC performance, suggesting that the relationship between early customer behavior and customer value is relatively interpretable and partially linear.
+
+### Cross Validation
+
+To evaluate model stability and reduce the risk of overfitting, 5-fold cross-validation was applied.
+
+Both Logistic Regression and Random Forest achieved similar average F1-scores across folds, indicating relatively stable model behavior.
+
+### Hyperparameter Tuning
+
+Hyperparameter tuning was performed using GridSearchCV on the Random Forest model.
+
+The best-performing configuration included:
+
+- 200 estimators  
+- minimum samples split of 5  
+- minimum samples leaf of 2  
+
+The tuned model achieved improved cross-validation F1-score performance, demonstrating better balance between precision and recall.
+
+### Final Conclusion
+
+Overall, the project demonstrates that early customer purchasing behavior contains meaningful predictive signals for identifying high-value customers.
+
+Among all features, EarlyMonetary, EarlyQuantity, and EarlyAvgOrderValue emerged as the strongest predictors.
+
+These findings suggest that businesses can proactively identify valuable customers early in their lifecycle and apply targeted marketing or retention strategies before customer value fully develops.
